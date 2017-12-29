@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Forms9PatchHtmlTag"
@@ -15,20 +16,20 @@
                         BackgroundColor="White"
                         Padding="15">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
 
                         <Label
                             Grid.Row="0"
-                            Text="{Binding Title}"/>
+                            Text="{Binding Title}" />
 
                         <forms9Patch:Label
                             Grid.Row="1"
                             HtmlText="{Binding Description}"
                             FontSize="14"
                             TextColor="Blue"
-                            ActionTagTapped="Label_OnActionTagTapped"/>
+                            ActionTagTapped="Label_OnActionTagTapped" />
                     </Grid>
 
                 </ViewCell>

@@ -1,8 +1,8 @@
-﻿using ListView = Xamarin.Forms.ListView;
+﻿using Xamarin.Forms;
 
 namespace Forms9PatchHtmlTag
 {
-	public class ProductInfoListView : ListView
-	{
-	}
+    public class ProductInfoListView : ListView
+    {
+    }
 }
