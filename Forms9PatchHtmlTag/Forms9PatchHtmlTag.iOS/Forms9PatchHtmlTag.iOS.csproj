@@ -90,6 +90,8 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Renderers\ProductInfoListSource.cs" />
+    <Compile Include="Renderers\ProdutInfoListViewRenderer.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -125,9 +127,10 @@
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Forms9PatchHtmlTag\Forms9PatchHtmlTag.csproj">
-      <Project>{B64C675A-38F0-49DD-9885-502BA11A504F}</Project>
+      <Project>{3499aa48-e1b5-4601-a5be-4284d9def50e}</Project>
       <Name>Forms9PatchHtmlTag</Name>
     </ProjectReference>
   </ItemGroup>

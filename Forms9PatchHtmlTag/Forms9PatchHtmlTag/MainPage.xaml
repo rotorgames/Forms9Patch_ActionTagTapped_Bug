@@ -2,10 +2,38 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Forms9PatchHtmlTag"
+             xmlns:forms9Patch="clr-namespace:Forms9Patch;assembly=Forms9Patch"
              x:Class="Forms9PatchHtmlTag.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <local:ProductInfoListView
+        HasUnevenRows="True"
+        x:Name="ThisListView">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid
+                        BackgroundColor="White"
+                        Padding="15">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Label
+                            Grid.Row="0"
+                            Text="{Binding Title}"/>
+
+                        <forms9Patch:Label
+                            Grid.Row="1"
+                            HtmlText="{Binding Description}"
+                            FontSize="14"
+                            TextColor="Blue"
+                            ActionTagTapped="Label_OnActionTagTapped"/>
+                    </Grid>
+
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </local:ProductInfoListView>
 
 </ContentPage>
