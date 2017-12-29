@@ -18,7 +18,7 @@ namespace Forms9PatchHtmlTag.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
-
+            Forms9Patch.Droid.Settings.Initialize(this, "23MQ-3B4R-WYE2-Y86S-RUZH-SRQM-ZEPT-XZR8-WAVD-QLUT-WL7V-B9Z8-5KM4");
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
         }

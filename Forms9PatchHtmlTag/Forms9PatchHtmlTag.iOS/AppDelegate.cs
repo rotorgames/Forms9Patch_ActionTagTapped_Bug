@@ -22,6 +22,7 @@ namespace Forms9PatchHtmlTag.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            Forms9Patch.iOS.Settings.Initialize(this, "23MQ-3B4R-WYE2-Y86S-RUZH-SRQM-ZEPT-XZR8-WAVD-QLUT-WL7V-B9Z8-5KM4");
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
